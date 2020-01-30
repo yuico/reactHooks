@@ -1,6 +1,6 @@
-## D3 _ circle and line graph
+# D3 _ circle and line graph
 
-###basic code
+##basic code
 ```js
 import React, { useRef, useEffect, useState } from 'react';
 import { select, line, curveCardinal } from 'd3';
@@ -57,14 +57,14 @@ export default App;
 
 ```
 
-### axis
+## How to add axis and scale
 
-####import
+##import
 ```js
 import { select, line, curveCardinal, axisBottom, scaleLinear, axisRight } from 'd3';
 ```
 
-####code
+###code
 ```js
 
 function App() {
