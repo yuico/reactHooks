@@ -78,7 +78,8 @@ function App() {
       .domain([0, 150])
       .range([150, 0]);
 
-    const xAxis = axisBottom(xScale).ticks(data.length);
+    //start xscale from 1 => tickFormat(index => index + 1)
+    const xAxis = axisBottom(xScale).ticks(data.length).tickFormat(index => index + 1);
     svg
       .select(".x-axis")
       .style("transform", "translateY(150px)")
