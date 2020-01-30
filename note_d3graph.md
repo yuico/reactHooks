@@ -21,14 +21,8 @@ function App() {
       .x((value, index) => index * 50)
       .y(value => 150 - value)
       .curve(curveCardinal);
-    // svg
-    //   .selectAll("circle")
-    //   .data(data)
-    //   .join("circle")
-    //   .attr("r", value => value)
-    //   .attr("cx", value => value * 2)
-    //   .attr("cy", value => value * 2)
-    //   .attr("stroke", "red")
+    // svg.selectAll("circle").data(data).join("circle")
+    //    .attr("r", value => value).attr("cx", value => value * 2).attr("cy", value => value * 2).attr("stroke", "red")
       svg
       .selectAll("path")
       .data([data])
