@@ -54,12 +54,11 @@ export default App;
 
 ## How to add axis and scale
 
-##import
+
 ```js
 import { select, line, curveCardinal, axisBottom, scaleLinear, axisRight } from 'd3';
 ```
 
-###code
 ```js
 
 function App() {
