@@ -204,6 +204,7 @@ function App() {
  ## Interactivity (adding numerical value of each bar)   
  
  ```js
+ ...
  function App() {
   const [ data, setData ] = useState([13, 30, 80, 100, 60, 120, 150]);
   const svgRef = useRef();
