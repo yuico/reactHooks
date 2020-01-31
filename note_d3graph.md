@@ -268,5 +268,14 @@ function App() {
       .attr("fill", colorScale)
       .attr("height", value => 150 - yScale(value));
   }, [data]);
-...
+
+  return (
+    ...
+    <button onClick={() => setData([...data, Math.round(Math.random() * 100)])}>
+        Add data
+    </button>
+    ...  
+  );
+}
+
  ```
