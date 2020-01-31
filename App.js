@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BarChart from "./pages/BarChart"
+import BarChart from "./BarChart"
 import './App.css';
 
 // const data = [13, 30, 40, 29, 20];
