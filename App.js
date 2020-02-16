@@ -58,7 +58,7 @@ const App = () => {
     <div>
       <NavBar/>
       <div className="chart">      
-        <Barcharthorizontal data={data}/>
+        <Barcharthorizontal data={data} version={version}/>
        </div>
     </div>
 
