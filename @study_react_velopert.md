@@ -1,11 +1,25 @@
 reference: https://frontarm.com/james-k-nelson/jsx-live-cheatsheet/  https://velopert.com/3626
 
 part 3.JSX
-```js
+
 -Use <lowercase /> tags when you need a DOM elements, and <Capitalized /> tags for component elements.
 -JSX children can be text, elements, or a mix of both
 -Attributes are props
 Use "" quotes when your props are strings, Use {} braces when your props are literals or variables, And use bare attribute names to indicate a value of true
+-When a pair of {} braces is encountered within a JSX element, it’s value will be interpolated in as a child
+-A pair of empty <> and </> tags get’s turned into a React.Fragment elemen
+-{} interpolates children
+```js
+let Hello = (props) => <div>Hello, {props.to}</div>
+
+let hellosElement =
+  <div>
+    <Hello to="World!" />
+    <Hello to={<strong style={{color: '#61dafb'}}>React!</strong>} />
+    <Hello to={[<em>Mum</em>, " and ", <em>Dad</em>]} />
+  </div>
+  
+ReactDOM.render(hellosElement, document.getElementById('root'))
 ```
 
 1.var vs let and const
