@@ -1,4 +1,4 @@
-##IIFF
+#IIFF
 
 An immediately invoked function expression (or IIFE, pronounced "iffy") is a JavaScript programming language idiom which produces a lexical scope using JavaScript's function scoping
 ```js
