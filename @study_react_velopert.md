@@ -73,6 +73,27 @@ let hellosElement =
   
 ReactDOM.render(hellosElement, document.getElementById('root'))
 ```
+-{...object} acts like Object.assign()
+Passing {...object} as an attribute will add all of the properties of the object as separate attributes. It’s a bit calling Object.assign() on the props that you’ll pass to createElement().
+
+Combining JSX’s {...object} with destructuring assignment and rest parameters is a great way to pass through some of an element’s props to a child.
+```js
+const Panel = ({ active, style, ...other }) =>
+  <div
+    style={{
+      ...style,
+      color: active ? 'red' : undefined,
+    }}
+    {...other}
+  />
+
+let element =
+  <Panel active>
+    Active!
+  </Panel>
+  
+ReactDOM.render(element, document.getElementById('root'))
+```
 
 1.var vs let and const
 
