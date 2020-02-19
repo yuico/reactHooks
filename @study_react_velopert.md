@@ -1,6 +1,6 @@
 reference: https://frontarm.com/james-k-nelson/jsx-live-cheatsheet/  https://velopert.com/3626
 
-3.JSX
+part 3.JSX
 ```js
 -Use <lowercase /> tags when you need a DOM elements, and <Capitalized /> tags for component elements.
 -JSX children can be text, elements, or a mix of both
